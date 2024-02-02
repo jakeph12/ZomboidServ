@@ -1,0 +1,407 @@
+# Players can hurt and kill other players
+PVP=true
+
+# Game time stops when there are no players online
+PauseEmpty=true
+
+# Toggles global chat on or off.
+GlobalChat=true
+
+ChatStreams=s,r,a,w,y,sh,f,all
+
+# Clients may join without already having an account in the whitelist. If set to false, administrators must manually create username/password combos.
+Open=true
+
+# The first welcome message visible in the chat panel. This will be displayed immediately after player login. you can use RGB colours to chance the colour of the welcome message. You can also use <LINE> to create a separate lines within your text. Use: <RGB:1,0,0> This message will show up red!
+ServerWelcomeMessage=Welcome to Project Zomboid Multiplayer! <LINE> <LINE> To interact with the Chat panel: press Tab, T, or Enter. <LINE> <LINE> The Tab key will change the target stream of the message. <LINE> <LINE> Global Streams: /all <LINE> Local Streams: /say, /yell <LINE> Special Steams: /whisper, /safehouse, /faction. <LINE> <LINE> Press the Up arrow to cycle through your message history. Click the Gear icon to customize chat. <LINE> <LINE> Happy surviving!
+
+# Add unknown usernames to the whitelist when players join. Clients will supply their own username/password on joining. (This is for Open=true servers)
+AutoCreateUserInWhiteList=true
+
+# Display usernames above player's heads in-game.
+DisplayUserName=true
+
+# Display first & last name above player's heads.
+ShowFirstAndLastName=false
+
+# Force every new player to spawn at these set x,y,z world coordinates. Find desired coordinates at map.projectzomboid.com. (Ignored when 0,0,0)
+SpawnPoint=0,0,0
+
+# Players can enter and leave PVP on an individual basis. A player can only hurt another player when at least one of them is in PVP mode - as shown by the unobscured skull and crossbones on the left of the screen. When SafetySystem=false, players are free to hurt each other at any time if PVP is enabled.
+SafetySystem=true
+
+# Display a skull icon over the head of players who have entered PVP mode
+ShowSafety=true
+
+# The time it takes for a player to enter and leave PVP mode\nMinimum=0 Maximum=1000 Default=2
+SafetyToggleTimer=2
+
+# The delay before a player can enter or leave PVP mode again, having recently done so\nMinimum=0 Maximum=1000 Default=3
+SafetyCooldownTimer=3
+
+# Item types new players spawn with.\nSeparate multiple item types with commas.\nExample: Base.Axe,Base.Bag_BigHikingBag
+SpawnItems=
+
+# Default starting port for player data. If UDP, this is this one of two ports used.\nMinimum=0 Maximum=65535 Default=16261
+DefaultPort=16261
+
+# Minimum=0 Maximum=65535 Default=16262
+UDPPort=16262
+
+# Reset ID determines if the server has undergone a soft-reset. If this number does match the client, the client must create a new character. Used in conjunction with PlayerServerID. It is strongly advised that you backup these IDs somewhere\nMinimum=0 Maximum=2147483647 Default=456881174
+ResetID=3192481
+
+# Enter the mod loading ID here. It can be found in \Steam\steamapps\workshop\modID\mods\modName\info.txt
+Mods=The Only Cure;Standardized Vehicle Upgrades (New Addon-based version);TKS;UBPropFix;ADRENALINE_MOD;ProfessionFramework;ItemTweakerAPI;FVInhalerAlbuterolMod;ArmoredVests;Authentic Z - Current;AuthenticZBackpacks+;tsarslib;BarricadeHurtZombies;barbedwireplus;Barricades41;BetterSatchel;BiancaInABox;BiancaInABoxNoBag;WaifuDakis;Bigsalt;Bigsalt_DriedFood;MandelaBowAndArrow;MandelaBowAndArrowAddon;MandelaBowAndArrowAltDrawAddOn;BB_Utils;BB_Throwables;breakingdeath;FancyHandwork;CanRepairDoors;cleanashes;Computer;ComputerCorporalsGamePack;ComputerGTAGamePack;ComputerClassicsGamePack;MetalDrumRainCollector;CraftHelper41;CraftableProduceSacks;craftingEnhancedCore;CrashedCarsMod;Crematorium;DIY_VehicleParts!;DakiAddonTouhou;DIY_VehicleParts!_GlassWindow;diveThroughWindows;DynamicMining;EasyConfigChucked;MoodleFramework;KillCount;modoptions;EasyLaundry;EvolvingTraitsWorldMarkDynamicTraits;ExpandedHelicopterEvents;ExtraBooks;ExtraTraitEffects;ETEExpandedDescriptions;ETENoProfessionCostChanges;ETENoCostChanges;Fake taxi;FencingKits;testarossa;FRUsedCarsNRN;FRUsedCars;FBR;firegastrail;firearmmod;BB_FirstAidOverhaul;FixFloor;FoodPreservationPlus;FUMOTH;Taser;GEARCORE;GKRealisticProfessions41;GlassRepair;GenRange;GreggiesGarageDoors;GMH;GunSuicide;cf_hearing_aid;NoLighterNeeded;ISA_41;ImmersiveSolarArrays_RUS;ImprovisedBackpacks;ImprovisedCabinetry;ImprovisedFlooring;ImprovisedFlooringPlus;ImprovisedGlass;Jar.Pickles.Canning.;JawStab_Buff;KeepThatRadioOn;KeyBlank;KitdeCostura;OxiSpear;LTN_SL;Lightswitches;Lingering Voices;MaDZombieLoot;MakePaths;Maxwell Cat;MemeSound;MetalworkingExpanded(+Recycling);methcooking;methcooking2;MilitaryUsedCarSkins;xXMoksXxFoods;xXMoksXxPackaging;xXMoksXxSportingGoods;xXMoksXxMedicine;xXMoksXxEnergyDrinks;xXMoksXxForagingAndFarming;MonkeysLib;MoreBuildsLite;MoreBulletsMod;More Gloves;MoreRepairRecipes;ToadTraits;ToadTraitsDisablePrepared;Multitool;ToadTraitsDynamic;newcontainers;NoStunlocks;BB_Foraging;OutTheWindow;PHUB LVL+ SOUND;panic_mustard_ballin;PwSleepingbags;Perform Music;PDFTZ;Plumbing;PornHub Van;PocketTV;PocketTVVCR;PocketTVReal;ProfessionFrameworkB41Patch;QNW_QNWLibrary;SimpleReadWhileWalking41;readym;RealMetalworking;ReLght;realmetalworking;Remastered Kitsune's Crossbow Mod;RemoveDebris;RenewableAxes;RenewableAxesBWPC;RepairRoads;RepairWallCracks;ResidentMedic;Hallucinations008;SAPPHEATER;TheWorkshop(new version);ScrapArmorTweaks;ScrapGuns(new version);ScrapWeapons(new version);SGunsRUS;ServingPlates;BLTAnnotations;SitOnBottle;SkillRecoveryJournal;Archery_Skillbooks;Skizots Visible Boxes and Garbage2;SleepingInMultiplayer;SlowConsumption;STR;STEVRN;SmokinJoesCoolers;FarmingTime;LearningTime;StackablePlanks;SteamPoweredGenerator;DropRollMod;CritSoundOnKill;truemusic;TheEngineer;thisishowyoucommitedtaxevasion;P4TidyUpMeister;timeToCook;ToolsOfTheTrade;RS_WaterCistern;TrueCrouching;BestGachiPack;kf1-music;TrueActionsDancing;TrueActionsDancingVHS;TrueActionsDancingVHS_MAG;UniversalGunRepair;UseScrewsForConstruction;vac;Vanilla_MRE;Vanilla_MRE_Extraordinary_Rations;VehicleRepairOverhaul;VestsandOveralls;Video_Game_Consoles;mrnvsbhltr;mrnvsbhltrvn;VolgaApocalypseKitchen;WPMoreNudieMagZ;WetAsPaws;WaterPipes Plus;WeldingGoggles;wellsConstruction;WiredLightPost;WorkingMasks;FC4WT;YouDriveISleep;Zombie Fix;VaccinDrReapersMP;VaccinDrReapers;ZombieReanimator;KAMER_RepairWall;KAMER_WallHealth;errorMagnifier;XnerEngiBombRezB41;zReArmorAbsorbSystem;zReBetterLockpicking;zReBetterLockpickingLYSLP;zReDRK_1;Advanced_trajectory;NestedContainer01;FatalNight;Immersive horror overlays;Literacy;autotsartrailers;BB_Auto_Engineering;BrutalHandwork;EvolvingTraitsWorld;GEARBASIC;ScrapArmor(new version);slowersprinters50;TsarcraftCache2
+
+# Enter the foldername of the mod found in \Steam\steamapps\workshop\modID\mods\modName\media\maps\
+Map=Muldraugh, KY
+
+# Kick clients whose game files don't match the server's.
+DoLuaChecksum=true
+
+DenyLoginOnOverloadedServer=true
+
+# Shows the server on the in-game browser. (Note: Steam-enabled servers are always visible in the Steam server browser)
+Public=false
+
+# Name of the server displayed in the in-game browser and, if applicable, the Steam browser
+PublicName=My PZ Server
+
+# Description displayed in the in-game public server browser. Typing \n will create a new line in your description
+PublicDescription=
+
+# Maximum number of players that can be on the server at one time. This excludes admins.
+# WARNING: Server player counts above 32 will potentially result in poor map streaming and desync. Please advance with caution.\nMinimum=1 Maximum=100 Default=32
+MaxPlayers=32
+
+# Ping limit, in milliseconds, before a player is kicked from the server. (Set to 100 to disable)\nMinimum=100 Maximum=2147483647 Default=400
+PingLimit=3000
+
+# After X hours, all containers in the world will respawn loot. To spawn loot a container must have been looted at least once. Loot respawn is not impacted by visibility or subsequent looting.\nMinimum=0 Maximum=2147483647 Default=0
+HoursForLootRespawn=0
+
+# Containers with a number of items greater, or equal to, this setting will not respawn\nMinimum=1 Maximum=2147483647 Default=4
+MaxItemsForLootRespawn=4
+
+# Items will not respawn in buildings that players have barricaded or built in
+ConstructionPreventsLootRespawn=true
+
+# Remove player accounts from the whitelist after death. This prevents players creating a new character after death on Open=false servers
+DropOffWhiteListAfterDeath=false
+
+# All forms of fire are disabled - except for campfires
+NoFire=false
+
+# If checked, every time a player dies a global message will be displayed in the chat
+AnnounceDeath=false
+
+# The number of in-game minutes it takes to read one page of a book\nMinimum=0.00 Maximum=60.00 Default=1.00
+MinutesPerPage=1.0
+
+# Loaded parts of the map are saved after this set number of real-world minutes have passed. (The map is usually saved only after clients leave a loaded area)\nMinimum=0 Maximum=2147483647 Default=0
+SaveWorldEveryMinutes=0
+
+# Both admins and players can claim safehouses
+PlayerSafehouse=true
+
+# Only admins can claim safehouses
+AdminSafehouse=false
+
+# Allow non-members to enter a safehouse without being invited
+SafehouseAllowTrepass=true
+
+# Allow fire to damage safehouses
+SafehouseAllowFire=false
+
+# Allow non-members to take items from safehouses
+SafehouseAllowLoot=true
+
+# Players will respawn in a safehouse that they were a member of before they died
+SafehouseAllowRespawn=true
+
+# Players must have survived this number of in-game days before they are allowed to claim a safehouse\nMinimum=0 Maximum=2147483647 Default=0
+SafehouseDaySurvivedToClaim=0
+
+# Players are automatically removed from a safehouse they have not visited for this many real-world hours\nMinimum=0 Maximum=2147483647 Default=144
+SafeHouseRemovalTime=144
+
+# Governs whether players can claim non-residential buildings.
+SafehouseAllowNonResidential=true
+
+# Allow players to destroy world objects with sledgehammers
+AllowDestructionBySledgehammer=true
+
+# Allow players to destroy world objects only in their safehouse (require AllowDestructionBySledgehammer to true).
+SledgehammerOnlyInSafehouse=false
+
+# Kick players that appear to be moving faster than is possible. May be buggy -- use with caution.
+KickFastPlayers=false
+
+# ServerPlayerID determines if a character is from another server, or single player. This value may be changed by soft resets. If this number does match the client, the client must create a new character. This is used in conjunction with ResetID. It is strongly advised that you backup these IDs somewhere
+ServerPlayerID=
+
+# The port for the RCON (Remote Console)\nMinimum=0 Maximum=65535 Default=27015
+RCONPort=27015
+
+# RCON password (Pick a strong password)
+RCONPassword=
+
+# Enables global text chat integration with a Discord channel
+DiscordEnable=false
+
+# Discord bot access token
+DiscordToken=
+
+# The Discord channel name. (Try the separate channel ID option if having difficulties)
+DiscordChannel=
+
+# The Discord channel ID. (Use if having difficulties with Discord channel name option)
+DiscordChannelID=
+
+# Clients must know this password to join the server. (Ignored when hosting a server via the Host button)
+Password=1337
+
+# Limits the number of different accounts a single Steam user may create on this server. Ignored when using the Hosts button.\nMinimum=0 Maximum=2147483647 Default=0
+MaxAccountsPerUser=0
+
+# Allow co-op/splitscreen players
+AllowCoop=true
+
+# Players are allowed to sleep when their survivor becomes tired, but they do not NEED to sleep
+SleepAllowed=true
+
+# Players get tired and need to sleep. (Ignored if SleepAllowed=false)
+SleepNeeded=true
+
+KnockedDownAllowed=true
+
+SneakModeHideFromOtherPlayers=true
+
+# List Workshop Mod IDs for the server to download. Each must be separated by a semicolon. Example: WorkshopItems=514427485;513111049
+WorkshopItems=3024365998;2703664356;2839025395;2883755057;2807001835;2812583527;1343686691;566115016;3022168602;1962761540;2335368829;2282429356;2392709985;2913137598;3095911903;2790397567;2965943353;3068491310;2756636139;3004563786;2208315526;2824362101;2900287489;2853596558;2850135071;2856589908;2921321201;2934621024;2904920097;2905027525;2816646537;2635550102;2744974916;2186592938;2826801787;2923979345;1539281445;1315313725;2795814840;3008315162;2891779083;2963057869;2529746725;2914075159;2859296947;2553809727;2169435993;2925034918;2458631365;2859508566;2815723409;2862427248;2812828771;2365457951;1510950729;2908846234;2940908294;2256623447;3028261329;2756490460;2890748284;2830301361;3009343872;2048411289;2204106513;2734855468;2972289937;2789839628;2917518699;3061549919;2931424725;2714198296;2857548524;2730799481;2471844569;2810378872;2790428261;2800412098;2792020839;2863105799;2818541726;2930762705;2949991148;2853801532;2744675505;2918886125;2874678809;2892563252;2759027882;2910205808;2703943245;2824118167;2812878763;2870455380;2003212948;2751106077;2842158398;2802456220;3038405752;2945060824;2954521171;1299328280;2208260801;2917951452;2809203880;3056538624;2659216714;3008631771;2960600257;2714848168;2911472635;2829744786;3118159023;2810448965;2932823902;2216760107;2845810596;2845952197;2851584592;2900671939;2780594299;2845832474;2572385719;2927744729;2924674708;2746843062;2746736222;2866542033;2944617674;2877732496;2658619264;2680473910;2948371116;2961796641;2125659488;2122265954;2524190858;2963511042;2815560151;2416189048;2503622437;2877474774;2921029369;2870353169;2864231031;2623855083;2783635181;1915420850;1911229825;2771356513;2762648316;2908614026;2887987981;2688809268;2613146550;2906633595;2902638247;2769706949;2718642011;2870742794;2719592131;2966176354;2739462447;2722870610;2648779556;2707957711;2899457928;2864015246;2917021415;3100032203;2757712197;2914817886;2831786301;2901552077;2882021759;2881673254;2791484720;2942582690;2851206870;2852690210;2890387396;2760742937;2752895143;2830570280;2896255721;2685680439;2803743541;3006882690;3002666175;2896041179;2537343450;3057997341;2929123989;3012396274;2895102994;2946221823;3095527318;3038695235;2839351261
+
+# Show Steam usernames and avatars in the Players list. Can be true (visible to everyone), false (visible to no one), or admin (visible to only admins)
+SteamScoreboard=true
+
+# Enable the Steam VAC system
+SteamVAC=true
+
+# Attempt to configure a UPnP-enabled internet gateway to automatically setup port forwarding rules. The server will fall back to default ports if this fails
+UPnP=true
+
+# VOIP is enabled when checked
+VoiceEnable=true
+
+# The minimum tile distance over which VOIP sounds can be heard.\nMinimum=0.00 Maximum=100000.00 Default=10.00
+VoiceMinDistance=10.0
+
+# The maximum tile distance over which VOIP sounds can be heard.\nMinimum=0.00 Maximum=100000.00 Default=100.00
+VoiceMaxDistance=100.0
+
+# Toggle directional audio for VOIP
+Voice3D=true
+
+# Minimum=10.00 Maximum=150.00 Default=70.00
+SpeedLimit=70.0
+
+LoginQueueEnabled=false
+
+# Minimum=20 Maximum=1200 Default=60
+LoginQueueConnectTimeout=60
+
+# Set the IP from which the server is broadcast. This is for network configurations with multiple IP addresses, such as server farms
+server_browser_announced_ip=
+
+# Players can respawn in-game at the coordinates where they died
+PlayerRespawnWithSelf=false
+
+# Players can respawn in-game at a split screen / Remote Play player's location
+PlayerRespawnWithOther=false
+
+# Governs how fast time passes while players sleep. Value multiplies the speed of the time that passes during sleeping.\nMinimum=1.00 Maximum=100.00 Default=40.00
+FastForwardMultiplier=40.0
+
+# Safehouse acts like a normal house if a member of the safehouse is connected (so secure when players are offline)
+DisableSafehouseWhenPlayerConnected=false
+
+# Players can create factions when true
+Faction=true
+
+# Players must survive this number of in-game days before being allowed to create a faction\nMinimum=0 Maximum=2147483647 Default=0
+FactionDaySurvivedToCreate=0
+
+# Number of players required as faction members before the faction owner can create a group tag\nMinimum=1 Maximum=2147483647 Default=1
+FactionPlayersRequiredForTag=1
+
+# Disables radio transmissions from players with an access level
+DisableRadioStaff=false
+
+# Disables radio transmissions from players with 'admin' access level
+DisableRadioAdmin=true
+
+# Disables radio transmissions from players with 'gm' access level
+DisableRadioGM=true
+
+# Disables radio transmissions from players with 'overseer' access level
+DisableRadioOverseer=false
+
+# Disables radio transmissions from players with 'moderator' access level
+DisableRadioModerator=false
+
+# Disables radio transmissions from invisible players
+DisableRadioInvisible=true
+
+# Semicolon-separated list of commands that will not be written to the cmd.txt server log. For example: \n-vehicle. Inputting * means do NOT write any vehicle command. Inputting: \n+vehicle.installPart means DO write that command
+ClientCommandFilter=-vehicle.*;+vehicle.damageWindow;+vehicle.fixPart;+vehicle.installPart;+vehicle.uninstallPart
+
+# Semicolon-separated list of actions that will be written to the ClientActionLogs.txt server log.
+ClientActionLogs=ISEnterVehicle;ISExitVehicle;ISTakeEngineParts;
+
+# Track changes in player perk levels in PerkLog.txt server log
+PerkLogs=true
+
+# Maximum number of items that can be placed in a container.  Zero means there is no limit. (PLEASE NOTE: This includes individual small items such as nails. A limit of 50 will mean only 50 nails can be stored.)\nMinimum=0 Maximum=9000 Default=0
+ItemNumbersLimitPerContainer=0
+
+# Number of days before old blood splats are removed.
+# Removal happens when map chunks are loaded.
+# Zero means they will never disappear\nMinimum=0 Maximum=365 Default=0
+BloodSplatLifespanDays=0
+
+# Allow use of non-ASCII (cyrillic etc) characters in usernames
+AllowNonAsciiUsername=false
+
+BanKickGlobalSound=true
+
+# If enabled, when HoursForCorpseRemoval triggers, it will also remove player’s corpses from the ground.
+RemovePlayerCorpsesOnCorpseRemoval=false
+
+# If true, player can use the "delete all" button on bins.
+TrashDeleteAll=false
+
+# If true, player can hit again when struck by another player.
+PVPMeleeWhileHitReaction=false
+
+# If true, players will have to mouse over someone to see their display name.
+MouseOverToSeeDisplayName=true
+
+# If true, automatically hide the player you can't see (like zombies).
+HidePlayersBehindYou=true
+
+# Damage multiplier for PVP melee attacks.\nMinimum=0.00 Maximum=500.00 Default=30.00
+PVPMeleeDamageModifier=30.0
+
+# Damage multiplier for PVP ranged attacks.\nMinimum=0.00 Maximum=500.00 Default=50.00
+PVPFirearmDamageModifier=50.0
+
+# Modify the range of zombie attraction to cars. (Lower values can help with lag.)\nMinimum=0.00 Maximum=10.00 Default=0.50
+CarEngineAttractionModifier=0.5
+
+# Governs whether players bump (and knock over) other players when running through them.
+PlayerBumpPlayer=false
+
+# Controls display of remote players on the in-game map.\n1=Hidden 2=Friends 3=Everyone\nMinimum=1 Maximum=3 Default=1
+MapRemotePlayerVisibility=1
+
+# Minimum=1 Maximum=300 Default=5
+BackupsCount=5
+
+BackupsOnStart=true
+
+BackupsOnVersionChange=true
+
+# Minimum=0 Maximum=1500 Default=0
+BackupsPeriod=0
+
+# Disables anti-cheat protection for type 1.
+AntiCheatProtectionType1=true
+
+# Disables anti-cheat protection for type 2.
+AntiCheatProtectionType2=true
+
+# Disables anti-cheat protection for type 3.
+AntiCheatProtectionType3=true
+
+# Disables anti-cheat protection for type 4.
+AntiCheatProtectionType4=true
+
+# Disables anti-cheat protection for type 5.
+AntiCheatProtectionType5=true
+
+# Disables anti-cheat protection for type 6.
+AntiCheatProtectionType6=true
+
+# Disables anti-cheat protection for type 7.
+AntiCheatProtectionType7=true
+
+# Disables anti-cheat protection for type 8.
+AntiCheatProtectionType8=true
+
+# Disables anti-cheat protection for type 9.
+AntiCheatProtectionType9=true
+
+# Disables anti-cheat protection for type 10.
+AntiCheatProtectionType10=true
+
+# Disables anti-cheat protection for type 11.
+AntiCheatProtectionType11=true
+
+# Disables anti-cheat protection for type 12.
+AntiCheatProtectionType12=false
+
+# Disables anti-cheat protection for type 13.
+AntiCheatProtectionType13=true
+
+# Disables anti-cheat protection for type 14.
+AntiCheatProtectionType14=true
+
+# Disables anti-cheat protection for type 15.
+AntiCheatProtectionType15=false
+
+# Disables anti-cheat protection for type 16.
+AntiCheatProtectionType16=true
+
+# Disables anti-cheat protection for type 17.
+AntiCheatProtectionType17=true
+
+# Disables anti-cheat protection for type 18.
+AntiCheatProtectionType18=true
+
+# Disables anti-cheat protection for type 19.
+AntiCheatProtectionType19=true
+
+# Disables anti-cheat protection for type 20.
+AntiCheatProtectionType20=true
+
+AntiCheatProtectionType21=false
+
+AntiCheatProtectionType22=false
+
+AntiCheatProtectionType23=true
+
+AntiCheatProtectionType24=true
+
+# Threshold value multiplier for anti-cheat protection: type 2.\nMinimum=1.00 Maximum=10.00 Default=3.00
+AntiCheatProtectionType2ThresholdMultiplier=3.0
+
+# Threshold value multiplier for anti-cheat protection: type 3.\nMinimum=1.00 Maximum=10.00 Default=1.00
+AntiCheatProtectionType3ThresholdMultiplier=1.0
+
+# Threshold value multiplier for anti-cheat protection: type 4.\nMinimum=1.00 Maximum=10.00 Default=1.00
+AntiCheatProtectionType4ThresholdMultiplier=1.0
+
+# Threshold value multiplier for anti-cheat protection: type 9.\nMinimum=1.00 Maximum=10.00 Default=1.00
+AntiCheatProtectionType9ThresholdMultiplier=1.0
+
+# Threshold value multiplier for anti-cheat protection: type 15.\nMinimum=1.00 Maximum=10.00 Default=1.00
+AntiCheatProtectionType15ThresholdMultiplier=1.0
+
+# Threshold value multiplier for anti-cheat protection: type 20.\nMinimum=1.00 Maximum=10.00 Default=1.00
+AntiCheatProtectionType20ThresholdMultiplier=1.0
+
+# Minimum=1.00 Maximum=10.00 Default=1.00
+AntiCheatProtectionType22ThresholdMultiplier=1.0
+
+# Minimum=1.00 Maximum=10.00 Default=6.00
+AntiCheatProtectionType24ThresholdMultiplier=6.0
